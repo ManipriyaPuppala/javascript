@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles Side by Side</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f5f5f5;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap; /* so it adjusts in small screens */
+    }
+
+    .article {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      width: 250px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+
+    .article h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .article p {
+      font-size: 14px;
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .article button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .article button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">Articles</h1>
+  <div class="container">
+    <div class="article">
+      <h2>Article 1</h2>
+      <img src="OIP (2).webp" width="200px" height="400px">
+      <p>The image is the front page of The Guardian newspaper dated December 12, 2019. The main headline reads, "Corbyn urges voters to deliver 'shock to the establishment'." This refers to Jeremy Corbyn, the leader of the Labour Party at the time, encouraging voters to make a significant impact in the upcoming election. The front page also features other articles, including an interview with Nathalie Emmanuel and a piece on Ghislaine Maxwell.</p>
+      <button onclick="changeColor(this)">Change Background</button>
+    </div>
+    <div class="article">
+      <h2>Article 2</h2>
+      <img src="OIP (2).webp" width="200px" height="400px">
+      <p>The image is the front page of The Guardian newspaper dated December 12, 2019. The main headline reads, "Corbyn urges voters to deliver 'shock to the establishment'." This refers to Jeremy Corbyn, the leader of the Labour Party at the time, encouraging voters to make a significant impact in the upcoming election. The front page also features other articles, including an interview with Nathalie Emmanuel and a piece on Ghislaine Maxwell.</p>
+      <button onclick="changeColor(this)">Change Background</button>
+    </div>
+    <div class="article">
+      <h2>Article 3</h2>
+      <img src="OIP (2).webp" width="200px" height="400px">
+      <p>The image is the front page of The Guardian newspaper dated December 12, 2019. The main headline reads, "Corbyn urges voters to deliver 'shock to the establishment'." This refers to Jeremy Corbyn, the leader of the Labour Party at the time, encouraging voters to make a significant impact in the upcoming election. The front page also features other articles, including an interview with Nathalie Emmanuel and a piece on Ghislaine Maxwell.</p>
+      <button onclick="changeColor(this)">Change Background</button>
+    </div>
+    <div class="article">
+      <h2>Article 4</h2>
+      <img src="OIP (2).webp" width="200px" height="400px">
+      <p>The image is the front page of The Guardian newspaper dated December 12, 2019. The main headline reads, "Corbyn urges voters to deliver 'shock to the establishment'." This refers to Jeremy Corbyn, the leader of the Labour Party at the time, encouraging voters to make a significant impact in the upcoming election. The front page also features other articles, including an interview with Nathalie Emmanuel and a piece on Ghislaine Maxwell.</p>
+      <button onclick="changeColor(this)">Change Background</button>
+    </div>
+  </div>
+
+  <script>
+    function changeColor(button) {
+      // pick random color
+      const colors = ["#f28b82", "#fbbc04", "#34a853", "#4285f4", "#a142f4", "#ff6d01"];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      button.parentElement.style.background = randomColor;
+    }
+  </script>
+</body>
+</html>
